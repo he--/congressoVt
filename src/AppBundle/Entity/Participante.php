@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Participante
 {
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", name="nu_seq_participante")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,7 +24,7 @@ class Participante
     protected $nome;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     protected $idade;
 
@@ -36,8 +36,23 @@ class Participante
     protected $cpf;
 
     /**
-     * @var EmpresaEndereco
+     * @var string
      *
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $tipo;
+
+    /**
+     * @var Endereco
+     *
+     * @ORM\Column(nullable=true)
      * @ORM\OneToOne(targetEntity="Endereco", mappedBy="participante", cascade={"persist"})
      */
     protected $endereco;
@@ -107,6 +122,38 @@ class Participante
     }
 
     /**
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * @param string $tipo
+     */
+    public function setTipo($tipo)
+    {
+        $this->tipo = $tipo;
+    }
+
+    /**
      * @return EmpresaEndereco
      */
     public function getEndereco()
@@ -121,5 +168,6 @@ class Participante
     {
         $this->endereco = $endereco;
     }
+
 
 }

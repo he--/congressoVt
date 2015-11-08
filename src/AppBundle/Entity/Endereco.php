@@ -23,7 +23,7 @@ class Endereco
     /**
      * @var Participante
      *
-     * @ORM\OneToOne(targetEntity="Empresa", inversedBy="endereco")
+     * @ORM\OneToOne(targetEntity="Participante", inversedBy="endereco")
      * @ORM\JoinColumn(name="nu_seq_participante", referencedColumnName="nu_seq_participante", nullable=false)
      */
     protected $participante;
