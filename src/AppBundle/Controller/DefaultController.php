@@ -25,7 +25,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('site/index.html');
+        return $this->render('index.html');
     }
     
 }
