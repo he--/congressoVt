@@ -25,20 +25,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        //return $this->render('index.html');
-        return $this->redirect("segundo");
-    }
-
-
-    /**
-     * @Route("/segundo", name="segundo")
-     * @param Request $request
-     */
-    public function segundoPassoAction(Request $request)
-    {
         return $this->render('index.html');
-        dump("aqui");exit;
-
     }
-    
+
 }
