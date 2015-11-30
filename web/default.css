@@ -145,7 +145,8 @@ ul.style1 .first
 
 #header
 {
-	overflow: hidden;
+	/*overflow: hidden;*/
+	background-image:url("images/bannerBica.png")
 }
 
 /** LOGO */
