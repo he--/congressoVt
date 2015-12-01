@@ -138,7 +138,7 @@ ul.style1 .first
 #header-wrapper
 {
 	overflow: hidden;
-	height: 150px;
+	height: 180px;
 	background: #58534F;
 	border-bottom: 1px solid #3B3B3A;
 }
@@ -186,7 +186,7 @@ ul.style1 .first
 #menu
 {
 	padding: 40px 0px 0px 0px;
-	height: 99px;
+	height: 140px;
 }
 
 #menu ul
@@ -196,6 +196,7 @@ ul.style1 .first
 	padding: 0px;
 	list-style: none;
 	line-height: normal;
+	padding-top: 30px;
 }
 
 #menu li
@@ -203,7 +204,7 @@ ul.style1 .first
 	float: left;
 	padding: 2em 2em 2em 2em;
 	border-left: 1px solid #383533;
-	box-shadow:  -1px 0 0px #6D6865;
+	/*box-shadow:  -1px 0 0px #6D6865;*/
 }
 
 #menu a
