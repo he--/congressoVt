@@ -17,7 +17,6 @@ class DefaultController extends Controller
         return $this->redirectToRoute('index' );
 
     }
-
     /**
      * @param Request $request
      *
