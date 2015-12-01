@@ -28,4 +28,14 @@ class DefaultController extends Controller
         return $this->render('index.html');
     }
 
+    /**
+     * @param Request $request
+     *
+     * @Route("/sobre", name="sobre-congresso")
+     */
+    public function sobreAction(Request $request)
+    {
+        return $this->render('default/sobre.html');
+    }
+
 }
