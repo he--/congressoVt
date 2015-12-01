@@ -1,4 +1,4 @@
-congressoVt
-===========
+Congresso SZB
+=============
 
-A Symfony project created on November 3, 2015, 9:32 pm.
+40º Congresso da SZB
