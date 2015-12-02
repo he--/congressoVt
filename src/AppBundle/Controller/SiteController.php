@@ -4,7 +4,6 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @Route(path="/")
@@ -17,7 +16,7 @@ class SiteController extends Controller
      *      name="inicio"
      * )
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
         return $this->render('index.html');
     }
@@ -28,7 +27,7 @@ class SiteController extends Controller
      *      name="sobre-congresso"
      * )
      */
-    public function sobreAction(Request $request)
+    public function sobreAction()
     {
         return $this->render('default/sobre.html');
     }
