@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+
         <meta charset="UTF-8" />
+
         <title>{% block title %}40º Congresso da SZB{% endblock %}</title>
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" />
+        <link href="{{ asset('default.css') }}" rel="stylesheet" />
         {% block stylesheets %}{% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
     </head>
     <body>
+
         {% block body %}{% endblock %}
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="{{ asset('jquery.slidertron-1.1.js') }}"></script>
         {% block javascripts %}{% endblock %}
+
     </body>
 </html>
