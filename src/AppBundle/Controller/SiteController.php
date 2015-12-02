@@ -29,6 +29,6 @@ class SiteController extends Controller
      */
     public function sobreAction()
     {
-        return $this->render('default/sobre.html');
+        return $this->render('site/sobre.html.twig');
     }
 }
