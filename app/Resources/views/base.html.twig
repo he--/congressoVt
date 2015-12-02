@@ -1,28 +1,13 @@
-{#<!DOCTYPE html>#}
-{#<html>#}
-    {#<head>#}
-        {#<meta charset="UTF-8" />#}
-        {#<title>{% block title %}Welcome!{% endblock %}</title>#}
-        {#{% block stylesheets %}{% endblock %}#}
-        {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
-    {#</head>#}
-    {#<body>#}
-        {#{% block body %}{% endblock %}#}
-        {#{% block javascripts %}{% endblock %}#}
-    {#</body>#}
-{#</html>#}
-
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="refresh" content="0;url=/index.html">
-    <title>40congressoszb</title>
-    <script language="javascript">
-        window.location.href = "/index.html"
-    </script>
-</head>
-<body>
-Go to <a href="index.html">/index.html</a>
-</body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}40º Congresso da SZB{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
 </html>
-
