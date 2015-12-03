@@ -12,7 +12,7 @@ class SiteController extends Controller
 {
     /**
      * @Route(
-     *      path="/index",
+     *      path="/",
      *      name="inicio"
      * )
      */
