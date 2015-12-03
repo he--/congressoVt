@@ -439,28 +439,33 @@ ul.style1 .first
 #featured
 {
   overflow: hidden;
-  padding: 50px 0px;
-  border-bottom: 1px solid #D8D8D8;
+  /*padding: 50px 0px;*/
+  /*border-bottom: 1px solid #D8D8D8;*/
 }
 
 #featured #fbox1
 {
   float: left;
-  width: 235px;
+  width: 280px;
   margin-right: 20px;
+
 }
 
 #featured #fbox2
 {
   float: left;
-  width: 235px;
+  width: 280px;
   margin-right: 20px;
+  margin-left: 50px;
+
 }
 
 #featured #fbox3
 {
   float: left;
-  width: 235px;
+  width: 280px;
+  margin-left: 45px;
+
 }
 
 #featured #fbox4
@@ -471,7 +476,7 @@ ul.style1 .first
 
 #featured img
 {
-  border-radius: 120px;
+  /*border-radius: 120px;*/
 }
 
 #featured p
