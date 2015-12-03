@@ -9,5 +9,6 @@
 /composer.phar
 /vendor/
 /web/bundles/
-.idea/*
-.idea/workspace.xml
+/node_modules/
+/app/Resources/public/*
+!/app/Resources/public/css
