@@ -31,4 +31,15 @@ class SiteController extends Controller
     {
         return $this->render('site/sobre.html.twig');
     }
+
+    /**
+     * @Route(
+     *      path="/local",
+     *      name="local-congresso"
+     * )
+     */
+    public function localAction()
+    {
+        return $this->render('site/local.html.twig');
+    }
 }
