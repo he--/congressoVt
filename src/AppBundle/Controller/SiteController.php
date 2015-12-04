@@ -24,7 +24,7 @@ class SiteController extends Controller
     /**
      * @Route(
      *      path="/sobre",
-     *      name="sobre-congresso"
+     *      name="sobre_congresso"
      * )
      */
     public function sobreAction()
