@@ -15,15 +15,28 @@
     </head>
     <body>
 
+        <header class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ path('inicio') }}" class="navbar-brand">Congresso SZB</a>
+                </div>
+                <nav class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" title="Página inicial">Início</a></li>
+                        <li><a href="{{ path('sobre_congresso') }}" accesskey="2" title="">Sobre o Congresso</a></li>
+                        <li><a href="#" title="Localização do evento">Local</a></li>
+                        <li><a href="#" title="Faça a sua inscrição">Incrições</a></li>
+                        <li><a href="#" title="Cronograma do evento">Cronograma</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         {% block body %}{% endblock %}
 
-        <div id="footer">
-            <p>
-                &copy; Untitled. All rights reserved. Design by
-                <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.
-                Photos by <a href="http://fotogrph.com/">Fotogrph</a>.
-            </p>
-        </div>
+        <footer id="footer">
+            <p>2015 &copy; <b>CongressoSZB</b></p>
+        </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="{{ asset('jquery.slidertron-1.1.js') }}"></script>
