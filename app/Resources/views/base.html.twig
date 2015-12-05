@@ -35,7 +35,29 @@
         {% block body %}{% endblock %}
 
         <footer id="footer">
-            <p>2015 &copy; <b>CongressoSZB</b></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <p class="text-muted">Parceiros do evento</p>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img class="img-responsive" src="{{ asset('images/logoszb.jpg') }}" alt="" />
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" src="{{ asset('images/logopmjp.jpg') }}" alt="" />
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" src="{{ asset('images/logobica.jpg') }}" alt="" style="height:50px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <p class="text-right">
+                            2015 &copy; <b>CongressoSZB</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
