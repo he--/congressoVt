@@ -35,7 +35,7 @@ class SiteController extends Controller
     /**
      * @Route(
      *      path="/local",
-     *      name="local-congresso"
+     *      name="local_congresso"
      * )
      */
     public function localAction()
