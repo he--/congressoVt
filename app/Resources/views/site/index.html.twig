@@ -2,85 +2,39 @@
 
 {% block body %}
 
-	<div id="header-wrapper">
-		<div id="header" class="container">
-			<div id="logo">
-				<!--<h1><a href="#">XL Congresso SZB</a></h1>-->
-				<!--<p>Mundo Animal</p>-->
-			</div>
-			<div id="menu">
-				<ul>
-					<li class="first active"><a href="#" accesskey="1" title="">Homepage</a></li>
-					<li><a href="/sobre" accesskey="2" title="">Sobre o Congresso</a></li>
-					<li><a href="/local" accesskey="3" title="">Local</a></li>
-					<li><a href="#" accesskey="4" title="">Incrições</a></li>
-					<li><a href="#" accesskey="5" title="">Cronograma do Evento</a></li>
-				</ul>
-			</div>
+	<section class="container">
 
-
-		</div>
-
-
-	</div>
-
-	<div id="banner">
-		<div id="slider">
-			<div class="viewer">
-				<div class="reel">
-					<div class="slide">
-						<h2>Jacaré</h2>
-						<p>Lorem ipsum dolor sit amet nullam.</p>
-						<a class="link" href="#">Full story ...</a> <img src="{{ asset('images/pic01.jpg') }}" alt="" />
+		<div id="slide-principal" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#slide-principal" data-slide-to="0" class="active"></li>
+				<li data-target="#slide-principal" data-slide-to="1"></li>
+				<li data-target="#slide-principal" data-slide-to="2"></li>
+				<li data-target="#slide-principal" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="{{ asset('images/bannerBica.png') }}" alt="">
+					<div class="carousel-caption">
 					</div>
-					<div class="slide">
-						<h2>This is the second slide.</h2>
-						<p>Lorem ipsum dolor sit amet nullam.</p>
-						<a class="link" href="#">Full story ...</a> <img src="{{ asset('images/pic02.jpg') }}" alt="" /> </div>
-					<div class="slide">
-						<h2>This is the third slide.</h2>
-						<p>Lorem ipsum dolor sit amet nullam.</p>
-						<a class="link" href="#">Full story ...</a> <img src="{{ asset('images/pic03.jpg') }}" alt="" /> </div>
+				</div>
+				<div class="item">
+					<img src="{{ asset('images/pic01.jpg') }}" alt="" />
+					<div class="carousel-caption">
+					</div>
+				</div>
+				<div class="item">
+					<img src="{{ asset('images/pic02.jpg') }}" alt="" />
+					<div class="carousel-caption">
+					</div>
+				</div>
+				<div class="item">
+					<img src="{{ asset('images/pic03.jpg') }}" alt="" />
+					<div class="carousel-caption">
+					</div>
 				</div>
 			</div>
-			<div class="indicator">
-				<ul>
-					<li class="active">1</li>
-					<li>2</li>
-					<li>3</li>
-				</ul>
-			</div>
 		</div>
-	</div>
-	<div id="wrapper">
-		<div id="featured" class="container">
-			<h2 class="title">Parceiros do Evento</h2>
-			<div id="fbox1" >
-				<img src="images/logoszb.jpg" width="300" height="300" alt="" />
-			</div>
-			<div id="fbox2" >
-				<img src="images/logopmjp.jpg" width="300" height="300" alt="" />
-			</div>
-			<div id="fbox3" >
-				<img src="images/logobica.jpg" width="300" height="300" alt="" />
-			</div>
-		</div>
-	</div>
 
-{% endblock %}
+	</section>
 
-{% block javascripts %}
-	<script type="text/javascript">
-		$('#slider').slidertron({
-			viewerSelector: '.viewer',
-			reelSelector: '.viewer .reel',
-			slidesSelector: '.viewer .reel .slide',
-			advanceDelay: 3000,
-			speed: 'slow',
-			navPreviousSelector: '.previous-button',
-			navNextSelector: '.next-button',
-			indicatorSelector: '.indicator ul li',
-			slideLinkSelector: '.link'
-		});
-	</script>
 {% endblock %}

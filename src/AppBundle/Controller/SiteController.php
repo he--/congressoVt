@@ -24,7 +24,7 @@ class SiteController extends Controller
     /**
      * @Route(
      *      path="/sobre",
-     *      name="sobre-congresso"
+     *      name="sobre_congresso"
      * )
      */
     public function sobreAction()
@@ -35,7 +35,7 @@ class SiteController extends Controller
     /**
      * @Route(
      *      path="/local",
-     *      name="local-congresso"
+     *      name="local_congresso"
      * )
      */
     public function localAction()

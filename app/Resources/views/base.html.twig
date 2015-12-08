@@ -15,18 +15,51 @@
     </head>
     <body>
 
+        <header class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ path('inicio') }}" class="navbar-brand">Congresso SZB</a>
+                </div>
+                <nav class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ path('inicio') }}" title="Página inicial">Início</a></li>
+                        <li><a href="{{ path('sobre_congresso') }}" title="Sobre o Congresso">O Congresso</a></li>
+                        <li><a href="{{ path('local_congresso') }}" title="Localização do evento">Localização</a></li>
+                        <li><a href="#" title="Faça a sua inscrição">Incrições</a></li>
+                        <li><a href="#" title="Cronograma do evento">Cronograma</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         {% block body %}{% endblock %}
 
-        <div id="footer">
-            <p>
-                &copy; Untitled. All rights reserved. Design by
-                <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.
-                Photos by <a href="http://fotogrph.com/">Fotogrph</a>.
-            </p>
-        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <p class="text-muted">Parceiros do evento</p>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img class="img-responsive" src="{{ asset('images/logoszb.jpg') }}" alt="" />
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" src="{{ asset('images/logopmjp.jpg') }}" alt="" />
+                            </div>
+                            <div class="col-xs-2">
+                                <img class="img-responsive" src="{{ asset('images/logobica.jpg') }}" alt="" style="height:50px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <p class="text-right text-muted">2015 &copy; <b>CongressoSZB</b></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="{{ asset('jquery.slidertron-1.1.js') }}"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         {% block javascripts %}{% endblock %}
 
     </body>
