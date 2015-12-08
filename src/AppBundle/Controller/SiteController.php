@@ -42,4 +42,15 @@ class SiteController extends Controller
     {
         return $this->render('site/local.html.twig');
     }
+
+    /**
+     * @Route(
+     *      path="/cursos",
+     *      name="mini_cursos"
+     * )
+     */
+    public function cursosAction()
+    {
+        return $this->render('site/mini_cursos.html.twig');
+    }
 }
