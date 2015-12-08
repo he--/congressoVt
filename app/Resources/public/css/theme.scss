@@ -3,16 +3,26 @@
 }
 
 .navbar {
-  background: #fff;
+  background: #960;
   padding: 10px 0;
+  text-transform: uppercase;
 }
 
 .navbar-brand {
+  color: #fff !important;
   font-weight: bold;
-  text-transform: uppercase;
+}
+
+.navbar-nav a {
+  color: #cca !important;
+}
+.navbar-nav a:hover {
+  background: #850 !important;
+  color: #fff !important;
 }
 
 #footer {
   border-top: 1px solid #eee;
+  margin-top: 40px;
   padding: 20px 0;
 }
