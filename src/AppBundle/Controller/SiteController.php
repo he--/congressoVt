@@ -53,4 +53,15 @@ class SiteController extends Controller
     {
         return $this->render('site/mini_cursos.html.twig');
     }
+
+    /**
+     * @Route(
+     *      path="/cronograma",
+     *      name="cronograma"
+     * )
+     */
+    public function cronogramaAction()
+    {
+        return $this->render('site/cronograma.html.twig');
+    }
 }
