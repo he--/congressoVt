@@ -75,4 +75,15 @@ class SiteController extends Controller
     {
         return $this->render('site/inscricoes.html.twig');
     }
+
+    /**
+     * @Route(
+     *      path="/submissao",
+     *      name="submissao"
+     * )
+     */
+    public function submissaoAction()
+    {
+        return $this->render('site/submissao.html.twig');
+    }
 }
