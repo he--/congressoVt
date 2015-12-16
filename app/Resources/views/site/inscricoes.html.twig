@@ -42,9 +42,7 @@
 					</th>
 				</tr>
 			</table>
-			<button  type="button">
-				Incrições em breve
-			</button>
+			<button type="button" class="sf-button" data-toggle="modal" data-target="#myModal">Incrições</button>
 		</div>
 
 		<div class="panel panel-default"align="center">
@@ -81,10 +79,9 @@
 					</th>
 				</tr>
 			</table>
-			<button  type="button">
-				Incrições em breve
-			</button>
+			<button type="button" class="sf-button" data-toggle="modal" data-target="#myModal">Incrições</button>
 		</div>
+
 
 		<div class="panel panel-default"align="center">
 			<!-- Default panel contents -->
@@ -120,12 +117,93 @@
 					</th>
 				</tr>
 			</table>
-			<button  type="button">
-				Incrições em breve
-			</button>
+			<button type="button" class="sf-button" data-toggle="modal" data-target="#myModal">Incrições</button>
 		</div>
+	</section>
 
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
 
-		</section>
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">REGRAS PARA AS  INSCRIÇÕES</h4>
+				</div>
+				<div class="modal-body">
+					<table class="table table-bordered">
+						<thead>
+						<tr bgcolor="#f0ffff">
+							<th align="justify">Antes de efetuar a sua a inscrição no 40º CONGRESSO DA SOCIEDADE DE AQUÁRIOS E ZOOLÓGICOS DO BRASIL, leia atentamente as regras</th>
+						</tr>
+						</thead>
+						<tr>
+							<th align="justify">As inscrições efetivadas e PAGAS no período de 15.12.2015 a 15.01.2016, atenderão aos valores respectivos ao primeiro prazo;</th>
+						</tr>
+						<tr>
+							<th align="justify">As inscrições efetivadas e PAGAS no período de 16.01.2015 a 15.02.2016, atenderão aos valores respectivos ao segundo prazo;</th>
+						</tr>
+						<tr>
+							<th align="justify">As inscrições efetivadas e PAGAS no período de 16.02.2016 a 10.03.2016, atenderão aos valores respectivos ao ultimo prazo;</th>
+						</tr>
+						<tr>
+							<th align="justify">Para se inscrever no MINICURSO, o participante deverá está inscrito no evento; </th>
+						</tr>
+						<tr>
+							<th align="justify">Os participantes poderão efetuar o seu pagamento através de: Cartão de Crédito (PagSeguro UOL), Boleto Bancário e Depósito Bancário;</th>
+						</tr>
+						<tr>
+							<th align="justify">Caso o pagamento seja feito através de Depósito Bancário, para a confirmação de pagamento é necessário o envio do comprovante da transação para
+								o e-mail: atendimento@andradeeventos.com.br, com o assunto “Comprovante Pagamento + Nome do Participante”;</th>
+						</tr>
+						<tr>
+							<th align="justify">Os participantes das categorias: “Estudante” deverão enviar para a Secretaria Executiva do Evento (atendimento@andradeeventos.com.br) o comprovante de matrícula/RDM (Relação das Disciplinas Matriculadas)
+								ou Declaração emitida pela coordenação do curso, comprovando sua vinculação com a uma instituição de ensino, válido para o ano de 2016.</th>
+						</tr>
+						<tr>
+							<th align="justify">A inscrição permite o acesso a: palestras, sessões cientificas,
+								 material do evento; submissão de trabalhos científicos e certificado das atividades que participou;</th>
+						</tr>
+						<tr>
+							<th align="justify">O cadastro on-line no sistema NÃO valida sua inscrição no evento.
+								É necessário efetuar o pagamento e aguardar sua comprovação;</th>
+						</tr>
+						<tr>
+							<th align="justify">Preencha cuidadosamente os campos do FORMULÁRIO DE CADASTRO definindo
+								a sua CATEGORIA e demais dados, para que todos os valores sejam calculados de forma correta;</th>
+						</tr>
+						<tr>
+							<th align="justify">Em caso de dúvidas e/ou maiores informações, favor entrar em contato com a Secretaria Executiva do evento através do e-mail:
+								atendimento@andradeeventos.com.br ou pelo telefone (83) 3244.0088 (Sra. Wilma Cavalcante / Sra. Priscyla Nelina);</th>
+						</tr>
+						<tr bgcolor="#f0ffff">
+							<th align="center">Observações Finais:</th>
+						</tr>
+						<tr>
+							<th align="justify">Os inscritos que NÃO comprovarem vínculo a instituição de ensino (categoria de estudante), até a data final das inscrições
+								on-line (10.02.2016), deverão procurar a Secretaria do Evento e apresentar tais documentos, a fim de quitar suas pendências junto ao evento;</th>
+						</tr>
+						<tr>
+							<th align="justify">Não haverá política de reembolso e/ou cancelamento de inscrições não serão aceitos;</th>
+						</tr>
+						<tr>
+							<th align="justify">DADOS BANCÁRIOS: Banco do Brasil S/A |  Ag.: 1636-5  |  C/C: 92894-1 |  Fav.: 40congressoszb;</th>
+						</tr>
+					</table>
+					<div class="radio">
+						<label><input type="radio" name="optradio" value="1">Li e concordo com os termos</label>
+						<label><input type="radio" name="optradio" value="0">Não concordo com os termos</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div align="center">
+					<a href="http://www.sistemaandrade.com.br/public/21/NovaInsc" center="center"><button type="button">Incrição</button></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 {% endblock %}
