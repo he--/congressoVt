@@ -204,13 +204,17 @@
 						</tr>
 					</table>
 					<div class="radio">
-						<label><input id="concordo" type="radio" name="optradio" value="1">Li e concordo com os termos</label>
-						<label><input type="radio" name="optradio" value="0" onClick="ativar()">Não concordo com os termos</label>
+						<label><input id="concordo" type="radio" name="optradio" checked
+									  onclick="document.getElementById('botao_inscricao').style.display = 'block'">Li e concordo com os termos.</label>
+						<label><input type="radio" name="optradio" value="0"
+									  onclick="document.getElementById('botao_inscricao').style.display = 'none'">Não concordo com os termos.</label>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<div align="center" id="botao_inscricao">
-					<a href="http://www.sistemaandrade.com.br/public/21/NovaInsc" center="center"><button type="button">Incrição</button></a>
+
+				<div id="modal-footer">
+					<div align="center" >
+					<a id="botao_inscricao" href="http://www.sistemaandrade.com.br/public/21/NovaInsc" center="center">
+						<h3>Click aqui para realizar sua inscrição</h3> </a>
 					</div>
 				</div>
 			</div>
@@ -220,6 +224,8 @@
 
 
 	<script>
+
+
 	</script>
 
 {% endblock %}
