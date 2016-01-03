@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * @Route(path="/")
@@ -85,5 +86,20 @@ class SiteController extends Controller
     public function submissaoAction()
     {
         return $this->render('site/submissao.html.twig');
+    }
+
+
+    /**
+     * @Route(
+     *      path="/exemplo",
+     *      name="exemplo"
+     * )
+     * @return Response
+     */
+    public function exemploAction()
+    {
+        return new Response(readfile('views/site/exemplo.pdf', true), 200,
+            array('Content-Type' => 'application/pdf')
+        );
     }
 }
