@@ -98,8 +98,11 @@ class SiteController extends Controller
      */
     public function exemploAction()
     {
-        return new Response(readfile('views/site/exemplo.pdf', true), 200,
-            array('Content-Type' => 'application/pdf')
+        $html = file_get_contents('exemplo.pdf');
+        $headers = array(
+            'Content-type' => 'application/pdf'
         );
+        $response = new Response($html,200,$headers);
+        return $response;
     }
 }
