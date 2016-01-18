@@ -98,7 +98,7 @@ class SiteController extends Controller
      */
     public function exemploAction()
     {
-        $html = file_get_contents('exemplo.pdf');
+        $html = file_get_contents('exemplo2.pdf');
         $headers = array(
             'Content-type' => 'application/pdf'
         );
