@@ -4,7 +4,7 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @Route(path="/")
@@ -17,8 +17,14 @@ class SiteController extends Controller
      *      name="inicio"
      * )
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+
+        $this->addFlash(
+            'notice',
+            'Your changes were saved!'
+        );
+
         return $this->render('site/index.html.twig');
     }
 

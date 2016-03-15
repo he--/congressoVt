@@ -37,4 +37,22 @@
 
 	</section>
 
+
+
+{% for flashMessage in app.session.flashbag.get('notice') %}
+		<script>alert(
+					"ATENÇÃO!!!\n\n"
+					+'Informamos que por motivo de força maior, o local do evento foi transferido para a Estação Cabo Branco - Ciência, Cultura e Arte localizada na Ponta do Cabo Branco. \n\n'
+					+'A fim de minimizar os transtornos decorrentes deste imprevisto, informamos que diariamente será oferecido transporte gratuito a todos os inscritos partindo do antigo local (Espaço Cultural José Lins do Rego/FUNESC) para o novo local, da seguinte forma:\n\n'
+					+'Dia 15/03: - as 8:00 e às 10:00hs, \n Ônibus saindo do Espaço Cultural, passando pelo Busto de Tamandaré para pegar pessoas e levar para a Estação Ciência.\n\n'
+					+'Dias 16 a 18/03 - as 8:00 \n'
+					+'ônibus saindo do Espaço Cultural em direção ao Busto de Tamandaré. Neste local, quem for para a Estação Ciência permanece no ônibus.\n'
+					+'Quem for para o Zoo para fazer os Minicursos deve descer e pegar outro ônibus que estará disponível para levá-los para o Zoo. \n\n'
+					+'Depois do Minicurso haverá ônibus no Zoo para levá-los para a Estação Ciência\n\n'
+					+'Ao termino das atividades previstas na programação também será oferecido diariamente transporte da Estação Ciência para o Espaço Cultural José Lins do Rego/FUNESC.')
+		</script>
+{% endfor %}
+
 {% endblock %}
+
+
