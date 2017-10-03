@@ -111,4 +111,11 @@ class SiteController extends Controller
         $response = new Response($html,200,$headers);
         return $response;
     }
+    
+    public function testeAction(Request $request)
+    {
+        $response = new Response($html,200,$headers);
+        return $response;
+
+    }
 }
